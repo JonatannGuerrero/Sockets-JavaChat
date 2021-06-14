@@ -1,1 +1,1 @@
-# Sockets_JavaChat
+# Chat Con Java NetBeans
