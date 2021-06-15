@@ -19,7 +19,6 @@ public class ConexionServidor {
     private String usuario;
     private String tfMensaje;
     private DataOutputStream salidaDatos;    
-    String Mensaje[]= new String[20];
     Scanner Leer= new Scanner(System.in);
     
     public ConexionServidor(Socket socket, String tfMensajes, String usuario) {
