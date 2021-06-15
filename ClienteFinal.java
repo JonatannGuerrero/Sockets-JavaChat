@@ -74,7 +74,7 @@ public class ClienteFinal implements Runnable{
     
     
     public static String Usuario=null;
-    public static String Host="192.168.3.3";
+    public static String Host="localhost";
     public static int Puerto=1234;
     private Socket socket;
     Scanner Leer= new Scanner(System.in);
