@@ -84,6 +84,7 @@ public class ClienteFinal implements Runnable{
         System.out.print("Por Favor Ingrese Su Nombre: ");        
         Usuario=Leer.nextLine();
         // Se crea el socket para conectar con el Sevidor del Chat
+	System.out.println("| ***Bienvenido al chat "+Usuario+"*** |");
         try {
             socket = new Socket(Host, Puerto);
         } catch (IOException ex) {
