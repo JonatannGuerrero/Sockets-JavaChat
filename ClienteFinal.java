@@ -25,9 +25,7 @@ public class ClienteFinal implements Runnable{
             if (Mensajes.equalsIgnoreCase("Menu")) {
                 MenuOp();                
             } else {
-             //Mensaje[Cont]=(Usuario+": "+Mensajes);
-             ConexionServidor conexionServidor = new ConexionServidor(socket, Mensajes, Usuario); // Envia Mensajes al Servidor
-             //Cont++;
+            ConexionServidor conexionServidor = new ConexionServidor(socket, Mensajes, Usuario); // Envia Mensajes al Servidor
             } 
         }        
     }
