@@ -42,6 +42,8 @@ Si por alguna razón el código nos da error verificar que el puerto que usé no
 
 Observemos que para hacer buen uso del chat primeramente se bebe ejecutar el servidor y seguidamente los clientes que queremos que se unan al chat, recordemos que el servidor permite un máximo de 10 clientes posibles, dado el caso los 10 clientes podrán comunicarse todos como si fuera un grupo.
 
+**Gif de la ejecución del código 🚨**
+
 ![](https://i.imgur.com/VCtey8H.gif)
 
 Finalmente, para entrar a eliminar los mensajes localmente escribimos la palabra ***Menu*** y nos traerá el menú de opciones con el cual podemos elegir cual mensaje se desea eliminar.
