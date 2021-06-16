@@ -1,4 +1,4 @@
-# Chat Con Java, NetBeans 📱📲
+# Chat con Java, NetBeans 📱📲
 
 Programa desarrollado con NetBeans. Contiene el servidor por el cual se conectan los clientes, simulando un chat. Tiene un máximo de 10 clientes, que se pueden conectar con servidor, los mensajes se guardan de manera local en el cliente con un máximo de 20 con la posibilidad de expandir el arreglo tipo String que guarda los mensajes para que pueda eliminarlos localmente. ***El chat no cuenta con interfaz gráfica, pero está pensado para adaptarle una de ser el caso.***    
     
