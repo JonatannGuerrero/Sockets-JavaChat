@@ -10,6 +10,8 @@ los Sockets son un sistema de comunicación entre procesos de distintas máquina
 
 Gracias al uso de los Sockets y Thread (Hilos) se puede lograr la comunicación cliente - servidor, el cliente se puede conectar con el servidor indicándole la IP a la cual se conecta y el puerto donde se está ejecutando el servidor.
 
+Si por alguna razón el código nos da error verificar que el puerto que usé no esté en uso en sus máquinas, con la consola de Windows (CMD) y el comando ***netstat -an*** podemos verificar que puertos tenemos disponibles y cambiarlo de ser necesario. 
+
 >  Código del lado del cliente donde le indicamos IP y puerto al cual se debe conectar. Se crea el socket para conectar con el Servidor del Chat (*ClienteFinal.java*).
 ```Java
     try {
@@ -23,26 +25,26 @@ Gracias al uso de los Sockets y Thread (Hilos) se puede lograr la comunicación 
 > Código del lado del servidor donde se crea el *ServerSocket* y le indicamos el puerto en escucha y el máximo de conexiones, por otra parte está el bucle infinito el cual va estar esperando por la conexión (*ServidorChat.java*).
 
 ```Java
-  try {
-            // Se crea el serverSocket
-            servidor = new ServerSocket(puerto, maximoConexiones);
-            // Bucle infinito para esperar conexiones
+    try {
+            servidor = new ServerSocket(puerto, maximoConexiones);            
             while (true) {
                 socket = servidor.accept();
                 System.out.println("Cliente " + socket.getInetAddress().getHostName() + " conectado.");
                 ConexionCliente cc = new ConexionCliente(socket, mensajes);
                 cc.start();
             }
-        } catch (IOException ex) {
+    } catch (IOException ex) {
             System.out.println("Error: " + ex.getMessage());
-        }
+    }
 ```
 
 # Ejecución del código 🔥📈
 
+Observemos que para hacer buen uso del chat primeramente se bebe ejecutar el servidor y seguidamente los clientes que queremos que se unan al chat, recordemos que el servidor permite un máximo de 10 clientes posibles, dado el caso los 10 clientes podrán comunicarse todos como si fuera un grupo.
 
+![](https://i.imgur.com/VCtey8H.gif)
 
-
+Finalmente, para entrar a eliminar los mensajes localmente escribimos la palabra ***Menu*** y nos traerá el menú de opciones con el cual podemos elegir cual mensaje se desea eliminar.
 
 # 🔧 Built With
 - NetBeans - Java 
